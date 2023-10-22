@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="img/Trivia.png" href="Trivia.png">
+  <title>Quiz App</title>
+        <!-- fontawesome icons cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- custom css -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="flex">
+  <div class="wrapper">
+    <div class="quiz-container">
+      <div class="quiz-head">
+        <h1 class="quiz-title">Quiz Game</h1>
+        <div class="quiz-score flex">
+          <span id="correct-score">0</span>/<span id="total-question">10</span>
+        </div>
+      </div>
+      <div class="quiz-body" id="quiz-body">
+        <h2 class="quiz-question" id="question"><!--What is the name of the smallest country in the world? <br> <span class="category">Geography</span>--></h2>
+              <ul class="quiz-options">
+           <!-- <li id="optionA">Option A</li>
+                <li id="optionB">Option B</li>
+                <li id="optionC">Option C</li>
+                <li id="optionD">Option D</li> -->
+              </ul>
+        <div id="result">
+          <!-- result here -->
+        </div>
+      </div>
+
+      <div class="quiz-foot">
+        <button type="button" id="check-answer">Check Answer</button>
+              
+        <button id="play-again">Play Again</button>
+
+        <p class="footer__copyright">
+                      By Kate Kruszeski <br> </p>
+      </div>
+    </div>
+  </div>
+       
+        
+  <!-- quiz app js -->
+  <script src="script.js"></script>
+</body>
+</html>
